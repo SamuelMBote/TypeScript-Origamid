@@ -24,8 +24,8 @@ export function mostrarCursos(cursos: ICurso[]) {
       <p>Horas: ${curso.horas}</p>
       <p>Aulas: ${curso.aulas}</p>
       <p>Tipo: ${curso.gratuito ? 'Gratuito' : 'Pago'}</p>
-      <p>Tipo: ${curso.tags.join(', ').toLowerCase()}</p>
-      <p>Tipo: ${curso.idAulas.join(' | ')}</p>
+      <p>Tags: ${curso.tags.join(', ').toLowerCase()}</p>
+      <p>idAulas: ${curso.idAulas.join(' | ')}</p>
     </div>`;
     }));
 }
