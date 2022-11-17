@@ -1,6 +1,10 @@
 import {fetchCursos} from './Arrays';
 import {meuEstilo} from './Style';
 import {fetchNotebook} from './TypesInterfaces';
+import {replaceLinks} from './Instanceof';
+import {modifyNodeList} from './InterfacesDOM';
 fetchNotebook();
 fetchCursos();
 meuEstilo();
+replaceLinks();
+modifyNodeList();

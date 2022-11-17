@@ -8,7 +8,6 @@
     "target": "ES6",
     "allowJs": true,
     "lib": ["es2017", "DOM"],
-    "strict": true,
-    "strictNullChecks": true
+    "strict": true
   }
 }
