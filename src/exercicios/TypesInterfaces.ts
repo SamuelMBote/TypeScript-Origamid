@@ -19,8 +19,12 @@ interface IProduto {
   empresaMontadora: IEmpresa;
 }
 export function mostrarProdutos(produto: IProduto) {
-  return (document.body.innerHTML += `<div>
-  <h2>Types e Interfaces</h2>
+  const sectionArray: HTMLElement = document.querySelector(
+    '#typesinterfaces div',
+  );
+
+  sectionArray.innerHTML += `<div>
+  
   <h3>${produto.nome}</h3>
   <p>R$ ${produto.preco.toFixed(2)}</p>
   <p>${produto.descricao}</p>
@@ -40,5 +44,5 @@ export function mostrarProdutos(produto: IProduto) {
     ', ' +
     produto.empresaMontadora.fundacao
   }</p>
-  </div>`);
+  </div>`;
 }
