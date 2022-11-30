@@ -5,7 +5,7 @@ import {fetchCursos as Arrays} from './exercicios/Arrays';
 import {replaceLinks as Instanceof} from './exercicios/Instanceof';
 import {modifyNodeList as InterfacesDOM} from './exercicios/InterfacesDOM';
 import {eventosCallback as EventosCallback} from './exercicios/EventosCallback';
-
+import {arredondaCeil as Functions} from './exercicios/Functions';
 meuEstilo();
 
 //0204 Types e Interfaces
@@ -22,3 +22,6 @@ InterfacesDOM();
 
 //0303 Eventos e Callback
 EventosCallback();
+
+//0305 Functions
+Functions(30);
