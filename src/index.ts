@@ -6,6 +6,8 @@ import {replaceLinks as Instanceof} from './exercicios/Instanceof';
 import {modifyNodeList as InterfacesDOM} from './exercicios/InterfacesDOM';
 import {eventosCallback as EventosCallback} from './exercicios/EventosCallback';
 import {arredondaCeil as Functions} from './exercicios/Functions';
+import {fetchCursos as UserTypeGuard} from './exercicios/UserTypeGuard';
+
 meuEstilo();
 
 //0204 Types e Interfaces
@@ -25,3 +27,6 @@ EventosCallback();
 
 //0305 Functions
 Functions(30);
+
+//0308 User Type Guard
+UserTypeGuard();
