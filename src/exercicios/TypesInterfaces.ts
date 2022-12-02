@@ -19,11 +19,11 @@ interface IProduto {
   empresaMontadora: IEmpresa;
 }
 export function mostrarProdutos(produto: IProduto) {
-  const sectionArray: HTMLElement = document.querySelector(
+  const sectionArray = document.querySelector<HTMLDivElement>(
     '#typesinterfaces div',
   );
-
-  sectionArray.innerHTML += `<div>
+  if (sectionArray)
+    sectionArray.innerHTML += `<div>
   
   <h3>${produto.nome}</h3>
   <p>R$ ${produto.preco.toFixed(2)}</p>

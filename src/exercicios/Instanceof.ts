@@ -4,8 +4,9 @@ function createLink() {
   linkOrigamid.id = 'origamid';
   linkOrigamid.innerText = 'Origamid';
 
-  const sectionInstanceof = document.querySelector('#instanceof div');
-  sectionInstanceof.innerHTML += linkOrigamid.outerHTML;
+  const sectionInstanceof =
+    document.querySelector<HTMLDivElement>('#instanceof div');
+  if (sectionInstanceof) sectionInstanceof.innerHTML += linkOrigamid.outerHTML;
   return;
 }
 export function replaceLinks() {

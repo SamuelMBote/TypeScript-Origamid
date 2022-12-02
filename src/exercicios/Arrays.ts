@@ -14,18 +14,19 @@ export async function fetchCursos() {
 }
 
 export function mostrarCursos(cursos: ICurso[]) {
-  const sectionArray: HTMLElement = document.querySelector('#arrays div');
+  const sectionArray = document.querySelector<HTMLElement>('#arrays div');
 
-  sectionArray.innerHTML += cursos.map((curso) => {
-    return `<div>
+  if (sectionArray)
+    sectionArray.innerHTML += cursos.map((curso) => {
+      return `<div>
     <h3 style="color:${curso.nivel == 'iniciante' ? 'blue' : 'red'}" >${
-      curso.nome
-    }</h3>
+        curso.nome
+      }</h3>
       <p>Horas: ${curso.horas}</p>
       <p>Aulas: ${curso.aulas}</p>
       <p>Tipo: ${curso.gratuito ? 'Gratuito' : 'Pago'}</p>
       <p>Tags: ${curso.tags.join(', ').toLowerCase()}</p>
       <p>idAulas: ${curso.idAulas.join(' | ')}</p>
     </div>`;
-  });
+    });
 }

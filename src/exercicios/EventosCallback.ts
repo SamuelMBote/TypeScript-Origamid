@@ -1,5 +1,5 @@
 export function eventosCallback() {
-  const menuButton: HTMLButtonElement = document.querySelector('button');
+  const menuButton = document.querySelector<HTMLButtonElement>('button');
   menuButton?.addEventListener('pointerdown', handleEvent);
 
   function handleEvent(Event: PointerEvent) {

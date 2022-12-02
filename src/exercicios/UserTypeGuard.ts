@@ -22,11 +22,13 @@ function isCurso(value: unknown): value is Curso {
   }
 }
 export function handleCurso(data: unknown) {
-  const listaCursos = document.querySelector('#usertypeguard div');
+  const listaCursos =
+    document.querySelector<HTMLDivElement>('#usertypeguard div');
 
   if (Array.isArray(data)) {
     data.filter(isCurso).forEach((item) => {
-      listaCursos.innerHTML += `<p>Nome: ${item.nome}</p>
+      if (listaCursos)
+        listaCursos.innerHTML += `<p>Nome: ${item.nome}</p>
       <p>Horas: ${item.horas}</p>
       <p>Aulas: ${item.aulas}</p>`;
     });

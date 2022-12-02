@@ -7,6 +7,7 @@ import {modifyNodeList as InterfacesDOM} from './exercicios/InterfacesDOM';
 import {eventosCallback as EventosCallback} from './exercicios/EventosCallback';
 import {arredondaCeil as Functions} from './exercicios/Functions';
 import {fetchCursos as UserTypeGuard} from './exercicios/UserTypeGuard';
+import {Exercise, UserData} from './exercicios/Exercicio01';
 
 meuEstilo();
 
@@ -30,3 +31,10 @@ Functions(30);
 
 //0308 User Type Guard
 UserTypeGuard();
+
+//0312 Exercicio 1
+Exercise();
+
+export interface Window {
+  UserData: UserData;
+}
