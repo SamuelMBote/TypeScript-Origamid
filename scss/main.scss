@@ -1,3 +1,28 @@
+@import '_imports';
+body {
+  font-size: 1.25rem;
+  font-family: sans-serif;
+}
+header {
+  margin: 0 0;
+}
+main {
+  margin: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  min-width: 50vw;
+  max-width: 100%;
+}
+
 body,
 ul {
   margin: 0px;
@@ -102,28 +127,4 @@ a:hover {
     transform: rotate(-135deg);
     top: -7px;
   }
-}
-
-body {
-  font-size: 1.25rem;
-  font-family: sans-serif;
-}
-header {
-  margin: 0 0;
-}
-main {
-  margin: 2rem;
-}
-
-label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-input {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  min-width: 50vw;
-  max-width: 100%;
 }

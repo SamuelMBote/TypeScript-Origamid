@@ -9,6 +9,9 @@ import {arredondaCeil as Functions} from './exercicios/Functions';
 import {fetchCursos as UserTypeGuard} from './exercicios/UserTypeGuard';
 import {Exercise} from './exercicios/Exercicio01';
 import {fetchVendas as Tuples} from './exercicios/Tuples';
+import {handleData as Keyof} from './exercicios/Keyof';
+import dadosPratica from './pratica/Dados';
+import domPratica from './pratica/Dom';
 
 meuEstilo();
 
@@ -38,3 +41,12 @@ Exercise();
 
 //0402 Tuples
 Tuples();
+
+//0403 Keyof
+Keyof();
+
+//06 Pratica de dados
+dadosPratica();
+
+//07 Pratica de DOM
+domPratica();
