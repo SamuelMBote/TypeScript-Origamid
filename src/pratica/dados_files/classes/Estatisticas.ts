@@ -59,7 +59,7 @@ export default class Estatisticas {
       if (day === 5) semana.sexta += 1;
       if (day === 6) semana.sabado += 1;
     }
-    console.log(semana);
+
     return semana;
   }
 

@@ -44,10 +44,9 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|jpeg|gif)$/i,
-        type: 'asset/source',
+        test: /\.(png|jpe?g|gif)$/i,
+        type: 'asset/resource',
       },
-      {test: /\.(png|jpg|jpeg|gif)$/i, type: 'asset/source'},
     ],
   },
   resolve: {
@@ -61,5 +60,12 @@ module.exports = {
   },
   optimization: {
     runtimeChunk: 'single',
+  },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'src'),
+    },
+    port: 3000,
+    open: true,
   },
 };
