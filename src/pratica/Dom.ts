@@ -1,4 +1,4 @@
-import Slide from './dom_files/Slide';
+import Slide from './dom_files/classes/Slide';
 
 export default function domPratica() {
   const container = document.getElementById('slide');
